@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap Template-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="align-items-center text-center justify-content-center">
+    <h1 class="mt-5 pt-5">MONTY HALL PROBLEM</h1>
+    <div class="mt-5">
+        Enter how many times you want to run the simulation:<br><br>
+        <input type="number" placeholder="enter value" value=100 id="numberOfTimes">
+        
+        <div class="mt-5 ">
+            Select the strategy you want the program to run all simulations:<br>
+            Switch <input type="radio" name="strategy" value="switch" style="padding-left:15px;" id="strategySwitch" default>
+            Stay <input type="radio" name="strategy" value="stay" id="strategyStay" style="padding-left:15px;">
+        </div>
+    </div>
+    <div class="mt-5">
+        <button class="btn btn-primary" onclick="runSimulation()" id="run">Run simulations</button>
+        <button class="btn btn-primary" onclick="reset()">Reset</button>
+    </div>
+    <p id="results" class="mt-5"></p>
+
+</div>
+
+    <script src="main.js"></script>
+
+    <!-- test cases -->
+    <!-- <script src="test.js"></script> -->
+    
+</body>
+</html>
